@@ -4,6 +4,8 @@ import { uid } from 'uid'
 import { onValue, ref, remove, set, setPriority } from 'firebase/database';
 import { useState, useEffect } from 'react';
 import img from './image.PNG'
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 import './cart.css'
 import { useNavigate } from 'react-router-dom'
 export default function Cart() {
@@ -44,6 +46,7 @@ export default function Cart() {
             remove(ref(db, `/cart/${item.productId}`));
         });
         setcheck(false);
+        NotificationManager.success('Success', 'Order Placed',1500);
     };
     return (
         <div>
@@ -71,7 +74,7 @@ export default function Cart() {
             <button className='btn1' onClick={()=>{navigate('/Trackorderuser')}}>Track your Order</button>
             </div>
             </h1>)}
-
+                    <NotificationContainer/>
         </div>
     )
 }

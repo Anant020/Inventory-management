@@ -1,0 +1,23 @@
+.orderlist{
+    position: relative;
+    display: flex;
+    height: 8ch;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 15px;
+    padding: 12px;
+    padding-left: 15px;
+    align-items: center;
+    margin: 1%;
+    justify-content: space-around;
+}
+.totalorder{
+    display: block;
+    position: relative;
+    
+    padding: 20px;
+}
+.orderlist h2{
+    
+    display: flex;
+}

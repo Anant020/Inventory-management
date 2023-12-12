@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Form from './Form';
+import Navbar from './navbar';
+import Display from './Display';
+import Vendor from './Vendor';
+import VendorChoice from './Vendorchoice';
+import Vendortrack from './Vendortrack';
+import Cart from './Cart';
+import Trackorderuser from './Trackorderuser';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        
+        <Routes>
+          <Route path="/" element={<Form />} />
+          <Route path="/display" element={<Display />} />
+          <Route path="/vendor" element={<Vendor />} />
+          <Route path="/vendorchoice" element={<VendorChoice/>} />
+          <Route path="/vendortrack" element={<Vendortrack/>} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/Trackorderuser" element={<Trackorderuser/>} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

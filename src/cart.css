@@ -1,0 +1,58 @@
+.cartdiv{
+    display: flex;
+    /* flex-wrap: wrap; */
+    display: block;
+    
+}
+.h1cart{
+    color: white;
+    margin: 25px;
+    letter-spacing: 1px;
+}
+.slantcard{
+    align-items: center;
+    margin: 2%;
+    justify-content: space-around;
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+.btn3{
+    border-radius: 8px;
+    background-color: rgb(198, 7, 7);
+    
+}
+.topline{
+    display: flex;
+    align-items: center;
+}
+
+.emptyname{
+    display: flex;
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+    font-size: 4ch;
+}
+.bt{
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cartheading{
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   margin-left: 28.5%;
+   margin-right: 20%;
+   margin-top: 0%;
+   margin-bottom: 0%;
+   top: 15px;
+   font-size: 2ch;
+    
+    
+}

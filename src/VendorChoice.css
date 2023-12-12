@@ -1,0 +1,19 @@
+.btn2{
+    background-color: rgb(81, 147, 255);
+    color: #282c34;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.btnset{
+
+    margin: 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: center; */
+}
